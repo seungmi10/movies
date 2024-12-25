@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>popular movies</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>영화 검색</h1>
+        <input
+          class="search-input"
+          type="text"
+          id="searchInput"
+          placeholder="영화를 검색하세요."
+        />
+        <button class="bookmark-btn">북마크 보기</button>
+
+        <div id="bookrmarkedMovies" class="movie-list"></div>
+      </header>
+    </div>
+    <div id="movieList" class="movie-list"></div>
+    <div id="movieModal" class="modal">
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="" />
+        <h2 id="modalTitle"></h2>
+        <p id="modalOverview"></p>
+        <button id="modalClose" class="modal-close">x</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
